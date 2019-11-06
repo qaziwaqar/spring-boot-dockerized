@@ -10,4 +10,5 @@ mvn dockerfile:build
 
 
 
-Note: Change the values in docker.image.prefix and tag in pom.xml according to your needs.
+
+**Note:** Change the values in docker.image.prefix and tag in pom.xml according to your needs.
