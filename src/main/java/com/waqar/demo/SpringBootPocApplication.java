@@ -1,4 +1,4 @@
-package com.overjet.demo;
+package com.waqar.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

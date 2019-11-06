@@ -1,4 +1,4 @@
-package com.overjet.demo;
+package com.waqar.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
