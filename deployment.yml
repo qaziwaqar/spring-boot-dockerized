@@ -1,0 +1,32 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: spring-boot-poc
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: spring-boot-poc
+    spec:
+      containers:
+        - name: spring-boot-poc
+          image: 'gcr.io/practiceanalytics-dev/spring-boot-poc:v1'
+          ports:
+            - containerPort: 8080
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-boot-poc-service
+  labels:
+    name: spring-boot-poc-service
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+      protocol: TCP
+  selector:
+    app: spring-boot-poc
+  type: LoadBalancer

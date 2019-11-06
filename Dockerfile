@@ -1,10 +1,5 @@
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
-#ARG DEPENDENCY=target/dependency
-#COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
-#COPY ${DEPENDENCY}/META-INF /app/META-INF
-#COPY ${DEPENDENCY}/BOOT-INF/classes /app
-
 # The application's jar file
 ARG JAR_FILE=target/spring-boot-poc-0.0.1-SNAPSHOT.jar
 
