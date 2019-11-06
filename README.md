@@ -1,6 +1,6 @@
 # spring-boot-dockerized
 
-Simple ready made dockerized spring boot application. Also the support of kubernetes is added as well.
+Simple ready made dockerized spring boot application. Support of kubernetes is added as well.
 
 # Build Project
 mvn clean package
